@@ -1,0 +1,1 @@
+setTimeout(() => {  window.location='TableauAffichage.html'; }, 1500);
