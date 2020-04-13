@@ -1,1 +1,1 @@
-setTimeout(() => {  window.location='TableauAffichage.html'; }, 2000);
+setTimeout(() => {  window.location='0.html'; }, 2000);
