@@ -1,1 +1,1 @@
-setTimeout(() => {  window.location='index.html'; }, 2000);
+setTimeout(() => {  window.location='https://tableau-affichage-rives-de-loire.netlify.app/'; }, 2000);
