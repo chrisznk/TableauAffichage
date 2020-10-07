@@ -26,13 +26,13 @@
 		      os = null;
 
 		  if (macosPlatforms.indexOf(platform) !== -1) {
-		    document.location='zoommtg://zoom.us/join?confno='+conf+'&pwd=2414&uname='+langue+NomFamille;
+		    window.open('zoommtg://zoom.us/join?confno='+conf+'&pwd=2414&uname='+langue+NomFamille);
 		  } else if (iosPlatforms.indexOf(platform) !== -1) {
-		    document.location='zoomus://zoom.us/join?confno='+conf+'&pwd=2414&uname='+langue+NomFamille;
+		    window.open('zoomus://zoom.us/join?confno='+conf+'&pwd=2414&uname='+langue+NomFamille);
 		  } else if (windowsPlatforms.indexOf(platform) !== -1) {
-		    document.location='zoommtg://zoom.us/join?confno='+conf+'&pwd=2414&uname='+langue+NomFamille;
+		    window.open('zoommtg://zoom.us/join?confno='+conf+'&pwd=2414&uname='+langue+NomFamille);
 		  } else if (/Android/.test(userAgent)) {
-		    document.location='zoomus://zoom.us/join?confno='+conf+'&pwd=2414&uname='+langue+NomFamille;
+		    window.open('zoomus://zoom.us/join?confno='+conf+'&pwd=2414&uname='+langue+NomFamille);
 		  } else{
 		    window.open('https://zoom.us/j/'+conf);
 		  }
@@ -44,7 +44,7 @@
 			 goZoom(langue,conf,sessionStorage.getItem("autosave"));
 		  }else{
 
-		    goZoom(langue,conf,prompt("Quel est ton nom de famille?", ""));
+		    goZoom(langue,conf,prompt("Quel est ton nom de famille?", "Nom de famille"));
 		  }
 		}
 	</script>
@@ -81,7 +81,7 @@
     <div class="card"><img class="card__img" src="sdr-fr.png" alt="image">
       <div class="card__content">
         <h1 class="card__header">Réunions de l'assemblée</h1>
-		<button class="card__btn" onclick="openZoom('FR-","329595610');">Accéder à la réunion <span>&rarr;</span></button>
+		<button class="card__btn" onclick="window.open('https://zoom.us/j/329595610');">Accéder à la réunion <span>&rarr;</span></button>
         <p class="card__text">En cliquant sur <strong>"Accéder à la réunion"</strong>, tu seras <strong>redirigé</strong> vers une salle de conférence <strong>Zoom</strong>.</p>
         <button class="card__btn" onclick="window.open('Documents/VCM.pdf')">Programme VCM <span>&rarr;</span></button>
 		</br>
@@ -93,7 +93,7 @@
     <div class="card"><img class="card__img" src="sdr-es.png" alt="image">
       <div class="card__content">
         <h1 class="card__header">Réunions espagnoles</h1>
-        <button class="card__btn" onclick="openZoom('ES-","329595610');">Accéder à la réunion <span>&rarr;</span></button>
+        <button class="card__btn" onclick="window.open('https://zoom.us/j/329595610')">Accéder à la réunion <span>&rarr;</span></button>
         <p class="card__text">En cliquant sur <strong> "Accéder à la réunion" </strong>, tu seras <strong> redirigé </strong> vers une salle de conférence <strong> Zoom </strong>.</p>
         <button class="card__btn" onclick="window.open('Documents/ProgrammeEspagnol.pdf')">Programme réunions <span>&rarr;</span></button>
       </div>
@@ -103,7 +103,7 @@
     <div class="card"><img class="card__img" src="sdr-al.png" alt="image">
       <div class="card__content">
         <h1 class="card__header">Réunions albanaise</h1>
-        <button class="card__btn" onclick="openZoom('AL-","329595610');">Accéder à la réunion <span>&rarr;</span></button>
+        <button class="card__btn" onclick="window.open('https://zoom.us/j/329595610')">Accéder à la réunion <span>&rarr;</span></button>
         <p class="card__text">En cliquant sur <strong> "Accéder à la réunion" </strong>, tu seras <strong> redirigé </strong> vers une salle de conférence <strong> Zoom </strong>.</p>
         <button class="card__btn" onclick="window.open('Documents/ClasseLectureAlbanais.pdf')">Programme de l'école<span>&rarr;</span></button>
       </div>
@@ -116,7 +116,7 @@
     <div class="card"><img class="card__img" src="pre.png" alt="image">
       <div class="card__content">
         <h1 class="card__header">Réunions pour la prédication</h1>
-		<button class="card__btn" onclick="openZoom('FR-","683344079');)">Acceder à la réunion <span>&rarr;</span></button>
+		<button class="card__btn" onclick="window.open('https://zoom.us/j/683344079')">Acceder à la réunion <span>&rarr;</span></button>
         <p class="card__text">En cliquant sur <strong> "Accéder à la réunion" </strong>, tu seras <strong> redirigé </strong> vers une salle de conférence <strong> Zoom </strong>.</p>
 		<button class="card__btn" onclick="window.open('Documents/Réunions pour la prédication.pdf')">Programme réunions<span>&rarr;</span></button>
 	      </br>
